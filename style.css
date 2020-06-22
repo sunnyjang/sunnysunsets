@@ -1,0 +1,82 @@
+/* background */
+body {
+  background-color: black;
+  font-family: "Times New Roman";
+  color: white;
+}
+
+/* spacing */
+* {
+  box-sizing: border-box;
+}
+
+/* naviagation bar */ 
+h3 {
+  text-align: center; 
+}
+
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: #ff69b4;
+  font-size: 20px;
+}
+
+/* line */
+hr {
+  color: white;
+}
+
+/* naviagation bar */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.column img {
+  margin-top: 12px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* polaroids */
+.polaroid a {
+  background: #ffffff;
+  /*display: inline;*/
+  float: left;
+  margin: 0px 40px 0px;
+  padding: 15px 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  /*position: relative;*/
+}
+
+.polaroid a:after {
+  color: black;
+  font-size: 25px;
+  content: attr(title);
+  top: 15px;
+  position: relative;
+}
+
+.polaroid img {
+  display: block;
+  width: 250px;
+}
